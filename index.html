@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consulta de IP por Host</title>
+    <meta name="description" content="Digite um host (ex.: google.com) e descubra o endereço IP correspondente.">
+    <link rel="preload" href="assets/img/logo.jpg" as="image">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/lookup.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <script src="src/js/lookup.js" defer></script>
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <img class="header__logo" src="assets/img/logo.jpg" width="48" height="48" alt="Logo" fetchpriority="high">
+            <span class="header__name">IP Lookup</span>
+        </div>
+    </header>
+    <main class="page__main">
+        <section class="lookup">
+            <div class="lookup__container">
+                <div class="lookup__content">
+                    <h1 class="lookup__title">Consultar IP do host</h1>
+                    <form class="lookup__form" method="get">
+                        <label class="lookup__label" for="host">Host</label>
+                        <div class="lookup__row">
+                            <input
+                                class="lookup__input"
+                                id="host"
+                                name="host"
+                                type="text"
+                                placeholder="google.com"
+                                autocomplete="off"
+                                required>
+                            <button class="lookup__button" type="submit">Consultar</button>
+                        </div>
+                    </form>
+                    <p class="lookup__result" aria-live="polite" hidden></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2026 itstfs</p>
+        </div>
+    </footer>
+</body>
+
+</html>
